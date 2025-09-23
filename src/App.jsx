@@ -5,6 +5,7 @@ import SectionCustomization from "./components/SectionCustomization";
 import SectionHistorico from "./components/SectionHistorico";
 import SectionMain from "./components/SectionMain";
 import Login from "./components/Login";
+import Footer from "./components/Footer";
 
 
 export default function App() {
@@ -106,6 +107,7 @@ export default function App() {
             <SectionMain atual={atual} timing={timing} setTiming={setTiming} formatarTempo={formatarTempo} setRodando={setRodando} time={time} pausaCurta={pausaCurta} pausaLonga={pausaLonga} visiblePausa={visiblePausa} setVisiblePausa={setVisiblePausa} />
             <SectionCustomization atual={atual} time={time} setTime={setTime} setTimeCurto={setTimeCurto} timeCurto={timeCurto} timeLonga={timeLonga} setTimeLonga={setTimeLonga} maxCiclos={maxCiclos} setMaxCiclos={setMaxCiclos} />
             <SectionHistorico atual={atual} />
+            <Footer />
             {verLogin && (
                 <Login setVerLogin={setVerLogin} verLogin={verLogin} />
             )}
